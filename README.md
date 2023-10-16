@@ -1,5 +1,3 @@
-### Travel agency 
-
 ## Class diagram:
 
 ``` mermaid
