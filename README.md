@@ -3,6 +3,7 @@
 ``` mermaid
 classDiagram
   class TravelAgency {
+    - id: Long
     - name: String
     - contact: ContactInfo
     - address: Address
@@ -13,11 +14,13 @@ classDiagram
   }
 
   class ContactInfo {
+    - id: Long
     - phone: String
     - email: String
   }
 
   class Address {
+    - id: Long
     - street: String
     - city: String
     - state: String
@@ -25,6 +28,7 @@ classDiagram
   }
 
   class Destination {
+    - id: Long
     - name: String
     - country: String
     - description: String
@@ -32,6 +36,7 @@ classDiagram
   }
 
   class Package {
+    - id: Long
     - name: String
     - destination: String
     - duration: Integer
@@ -41,6 +46,7 @@ classDiagram
   }
 
   class Client {
+    - id: Long
     - name: String
     - email: String
     - phone: String
@@ -48,6 +54,7 @@ classDiagram
   }
 
   class Employee {
+    - id: Long
     - name: String
     - email: String
     - position: String
