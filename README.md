@@ -8,7 +8,6 @@ classDiagram
     - contact: ContactInfo
     - address: Address
     - destinations: List<Destination>
-    - packages: List<Package>
     - clients: List<Client>
     - employees: List<Employee>
   }
@@ -33,16 +32,6 @@ classDiagram
     - country: String
     - description: String
     - pricePerPerson: Double
-  }
-
-  class Package {
-    - id: Long
-    - name: String
-    - destination: String
-    - duration: Integer
-    - totalPrice: Double
-    - departureDate: String
-    - returnDate: String
   }
 
   class Client {
