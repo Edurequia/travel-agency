@@ -10,6 +10,12 @@ classDiagram
     - destinations: List<Destination>
     - clients: List<Client>
     - employees: List<Employee>
+    + addDestination(destination: Destination)
+    + removeDestination(destination: Destination)
+    + addClient(client: Client)
+    + removeClient(client: Client)
+    + addEmployee(employee: Employee)
+    + removeEmployee(employee: Employee)
   }
 
   class ContactInfo {
