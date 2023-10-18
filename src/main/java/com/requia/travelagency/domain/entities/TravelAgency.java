@@ -3,6 +3,7 @@ package com.requia.travelagency.domain.entities;
 import jakarta.persistence.*;
 
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -73,4 +74,21 @@ public class TravelAgency {
     public List<Employee> getEmployees() {
         return employees;
     }
+
+
+    public void addClient(Client client){
+        clients.add(client);
+    }
+
+    public void deleteClient(Long clientId){
+        clients.stream()
+                .filter(client -> client.getClientId().equals(clientId))
+                .findFirst()
+                .ifPresent(clientToRemove -> clients.remove(clientToRemove));
+    }
+
+    public void addEmployee(Employee employee){
+        employees.add(employee);
+    }
+
 }
